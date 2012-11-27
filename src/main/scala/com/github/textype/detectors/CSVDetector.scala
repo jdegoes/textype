@@ -41,7 +41,7 @@ object CSVDetector extends Detector {
         case Some(text) =>
           var consumed = 0
 
-          var startField = new StringBuilder(state.startField)
+          val startField = new StringBuilder(state.startField)
           var inQuote    = state.inQuote
           var parsed     = state.parsed
 
